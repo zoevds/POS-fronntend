@@ -30,12 +30,17 @@ body {
 }
 .Landing {
   color: #7b886f;
+  display: flex;
+  justify-content: center;
 }
 h3 {
   font-family: "Russo One", sans-serif;
   display: flex;
   justify-content: end;
   align-items: center;
+}
+#carticon {
+  padding: 1rem;
 }
 #navbar {
   display: flex;
@@ -52,6 +57,7 @@ h3 {
 .navbar-nav .show > .nav-link {
   color: #e9ecef;
 }
+
 /* .menu-container .navbar {
   display: none;
   display: flex;
@@ -102,7 +108,8 @@ h3 {
   /* padding: 2rem; */
   box-shadow: 10px 10px 5px black;
 }
-#aboutpg {
+#aboutpg,
+#about-heading3 {
   display: flex;
   justify-content: center;
 }
@@ -126,10 +133,14 @@ h3 {
 #products-heading1 {
   font-family: "Seymour One", sans-serif;
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   border-width: 2rem;
+}
+.border-3 {
+  --bs-border-width: 3px;
+  border-top-style: ridge;
 }
 #aboutcol1 {
   font-size: 1rem;
