@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
@@ -75,7 +77,6 @@ h3 {
   justify-content: end;
 } */
 #about {
-  /* min-height: 160vh; */
   background-image: url(./assets/plain1.jpg);
   background-position: center;
   background-size: cover;
@@ -84,9 +85,24 @@ h3 {
 #contact {
   min-height: 100vh;
 }
-
+/* PRODUCT DESCRIPTION STYLES */
+#productdesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#productname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #products {
-  min-height: 120vh;
+  /* min-height: 120vh; */
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(./assets/background8.jpg);
   background-position: center;
@@ -141,6 +157,17 @@ h3 {
 .border-3 {
   --bs-border-width: 3px;
   border-top-style: ridge;
+}
+#card {
+  width: 40rem;
+  height: 45rem;
+  background-color: black;
+  color: #e9ecef;
+}
+#cardimg {
+  width: 40rem;
+  height: 20rem;
+  padding: 2rem;
 }
 #aboutcol1 {
   font-size: 1rem;

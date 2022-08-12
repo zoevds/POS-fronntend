@@ -1,6 +1,3 @@
-// const projects = JSON.parse(localStorage.getItem("properties"))
-//   ? JSON.parse(localStorage.getItem("properties"))
-//   : [];
 fetch("https://point-of-salee.herokuapp.com/products", {
   method: "get",
 })
@@ -11,15 +8,22 @@ fetch("https://point-of-salee.herokuapp.com/products", {
     products.forEach((product) => {
       document.querySelector("#products").innerHTML += `
       <div class="container">
-      <div class="card">
-    <div class="Item"  onclick='showItem(this.id)' id="${product.product_id}" >
-    <h1>${product.name}</h1>
-    <img src="${product.image}" alt="${product.image}">
-    <p>${product.descriptions}</p>
-    <p>${product.price}</p>
-    <p>${product.weight}</p>
+      <div id="card" class="card mb-3">
+      <div class="row">
+     <div class="Item"  onclick='showItem(this.id)' id="${product.product_id}" >
+    <h1 id="productname">${product.name}</h1>
+    <img id="cardimg" src="${product.image}" alt="${product.image}">
+    <p id="productdesc">${product.descriptions}</p>
+    <div class="row">
+    <div id="row" class="col-6">
+    <p> <i class="fa-solid fa-tag"></i> ${product.price}</p>
+    </div>
+    <div id="" class="col-6">
+    <p><i class="fa-solid fa-weight-scale"></i> ${product.weight}</p>
  </div>
  </div>
+
+</div>
 </div>
     `;
     });
